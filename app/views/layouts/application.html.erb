@@ -20,11 +20,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Sign Up</a></li>
-                    <li><a href="">Log In</a></li>
+                    <%= link_to "Home", pages_path %>
+                    <%= link_to "Services" %>
+                    <%= link_to "FAQ", faq_index_path %>
+                    <%= link_to "Sign Up", new_registration_path %>
+                    <%= link_to "Log In" %>
                 </ul>
             </div>
 

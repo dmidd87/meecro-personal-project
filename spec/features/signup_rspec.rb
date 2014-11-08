@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-feature "Create User" do
+feature "User registers" do
 
-  scenario "User creates user" do
+  scenario "User clicks on sign up and registers" do
       visit index_path
         click_on "Sign Up"
 
