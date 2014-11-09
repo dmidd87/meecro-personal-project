@@ -21,7 +21,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <%= link_to "Home", pages_path %>
-                    <%= link_to "Services" %>
+                    <%= link_to "Services", services_path %>
                     <%= link_to "FAQ", faq_index_path %>
                     <%= link_to "Sign Up", new_registration_path %>
                     <%= link_to "Log In" %>
@@ -31,12 +31,6 @@
         </div>
     </div>
     <!-- navbar ends here -->
-
-    <div class="jumbotron text-center">
-      <h3>Welcome to Meecro</h3>
-          <p>The premier web app to manage your life</p>
-
-    </div>
 
 <%= yield %>
 
