@@ -1,19 +1,19 @@
-<%= form_for(@user) do |f| %>
+  <%= form_for(@user) do |f| %>
 
   <%= f.label :first_name %>
-  <%= f.text_area :first_name %>
+  <%= f.text_field :first_name %>
 
   <%= f.label :last_name %>
-  <%= f.text_area :last_name %>
+  <%= f.text_field :last_name %>
 
   <%= f.label :email_address %>
-  <%= f.email_area :email_address %>
+  <%= f.text_field :email_address %>
 
   <%= f.label :password %>
-  <%= f.password_area :password %>
+  <%= f.password_field :password %>
 
   <%= f.label :password_confirmation %>
-  <%= f.password_area :password_confirmation %>
+  <%= f.password_field :password_confirmation %>
 
   <%= f.submit %>
 
