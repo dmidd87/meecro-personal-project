@@ -1,20 +1,48 @@
+  <div class= "container form-horizontal text-center">
+    
+    <h1>Sign up now!</h1>
   <%= form_for(@user) do |f| %>
+  <div class="form-group">
+    <%= f.label :first_name, "First name", class: "col-sm-2 control-label" %>
+      <div class="col-sm-5">
+        <%= f.text_field :first_name, class: "form-control" %>
+      </div>
+  </div>
 
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %>
+  <div class="form-group">
+    <%= f.label :last_name, "Last name", class: "col-sm-2 control-label" %>
+      <div class="col-sm-5">
+        <%= f.text_field :last_name, class: "form-control" %>
+      </div>
+  </div>
 
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
 
-  <%= f.label :email_address %>
-  <%= f.text_field :email_address %>
+  <div class="form-group">
+      <%= f.label :email_address, class: "col-sm-2 control-label" %>
+      <div class="col-sm-5">
+          <%= f.email_field :email_address, class: "form-control" %>
+      </div>
+  </div>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+  <div class ="form-group">
+    <%= f.label :password, class: "col-sm-2 control-label" %>
+    <div class="col-sm-5">
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
+  </div>
 
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
+  <div class ="form-group">
+    <%= f.label :password_confirmation, "Password confirmation", class: "col-sm-2 control-label" %>
+    <div class="col-sm-5">
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+    </div>
+  </div>
 
-  <%= f.submit %>
 
-<% end %>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-5"> <br>
+      <%= f.submit button_name:"Sign In", class: "btn btn-primary" %>
+    </div>
+  </div>
+  <%end%>
+</div>
